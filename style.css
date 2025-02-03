@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* this color is for the letters on the form */
+    color: grey;
+}
+header{
+    /* header of nav links */
+    background-color: rgb(235, 222, 224);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+/* nav links */
+.nav-links{
+    display: flex;
+    justify-content: right ;
+    list-style: none;
+    gap: 1rem;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* navs home page */
+.navdecor a {
+    justify-content: center;
+    text-decoration: underline;
+    color: burlywood;
+    font-weight: bold;
+    list-style: none;
+    font-size: x-large;
+}
+.h2home{
+    font-size: xx-large;
+    color: rgb(24, 24, 24);
+}
+.h22home{
+    color: rgb(24, 24, 24);
+}
+ 
+/* image home page */
+.beautyimage{
+    float: right;
+    width: 30%;
+    height: fit-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+/* h1 first page */
+.lbs{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(24, 24, 24);
+}
+/* about us */
+.aboutus{
+    text-align: center;
+    background-color: #ebd2ca;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.aboutus p{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 24);
+    line-height: 1.8;
+}
+.boutus h1{
+    color: rgb(24, 24, 24);
+}
+/* contact Page */
+.contact {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contactus h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.contactus form{
+    display: grid;
+    gap: 1rem;
+}
+.contactus label{
+    font-weight: bold;
+}
+.contactus input, .contact textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.contactus button {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+/* booknowbutton */
+
+.booknow button {
+    background-color: aquamarine;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+.booknow button:hover {
+    background-color: aquamarine;
+    
+}
+
+    
+    
+
+.contactus button:hover{
+    background-color: #555;
+}
+
+.container{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* booking */
+.booking h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+} 
+.booking form{
+    display: grid;
+    gap: 1rem;
+}
+.booking{
+    font-weight: bold;
+}
+.booking label{
+    font-weight: bold;
+}
+.booking input, .booking textarea{
+
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.booking button {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.booking button:hover{
+    background-color: #555;
+}
+/* the reason why nao estava a aparecer a table is because i didnt pu the classes properly */
+
+/* student discount  */
+/* h1 discount */
+.discount {
+    text-align: center;
+}
+.studentdiscount h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.studentdiscount form {
+    display: grid;
+    gap: 1rem;
+}
+.studentdiscount label{
+    font-weight: bold;
+}
+.studentdiscount input, .studentdiscount textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.studentdiscount button {
+    background-color: #333;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.studentdiscount button:hover{
+    background-color: #555;
+}
+
+
+/* footer */
+footer{
+    background-color: wheat;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* mediaquery */
+@media (max-width: 768px) {
+    .nav-links{
+        flex-direction: column;
+    }
+    .feature{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .feature{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1025px) {
+    .feature{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+/* style images */
+.galery {
+    text-align: left;
+    justify-content: last baseline;
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+.image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 9px;
+    transition: all 1s ease;
+    opacity: 1;
+}
+.imageblack{
+    grid-column-start: 3;
+    height: 600px ;
+}
+.beautyimage{
+    background-image: url(images/image3.png);
+    width: 500px;
+}
+.image-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 40px;
+}
+.studentimg{
+    grid-column-start: 6;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.salonimg{
+    width: 100px;
+    height: 100px;
+    top: 0%;
+    align-items: center;
+}
+.salonbook{
+    background-image: url(salonimg.jpg);
+    margin-top: 50px;
+}
+.salonn{
+    width: 100px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
