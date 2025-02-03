@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contact</title>
+    <title>Mywebsite</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Load jQuery here -->
 </head>
 <body>
     <header>
@@ -18,34 +19,39 @@
             </ul>
         </nav>
         <img src="salonimg.jpg" alt="" class="salobbook">
+        <img src="receptionn.jpg" alt="" id="image" class="reception">
         
-        <div> 
-        
-    </div>
+        <h1>Random GIF from Giphy</h1>
+        <button id="get-gif">See Random GIF</button>
+        <div id="gif-container"></div>
+        <script src="luena.js"></script>
     </header>
+    
     <main class="container">
         <section class="booking">
             <h1>Book with us!</h1>
-        
             <form>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
-
+                
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Enter your email">
 
                 <label for="service">Service:</label>
-                <textarea name="message" id="Service" placeholder="Service"></textarea>
-
+                
+                <select name="service" id="service"> <!-- Use select for drop-down options -->
+                    <option value="Hair Wash">Hair Wash</option>
+                    <option value="Hair Styling">Hair Styling</option>
+                    <option value="Hair Dye">Hair Dye</option>
+                </select>
+                
                 <button type="submit">Send</button>
             </form>
         </section>
     </main>
-    
 
     <footer>
         <p>&COPY; 2025 Portfolio, All right reserved for Luena.</p>
     </footer>
 </body>
 </html>
-

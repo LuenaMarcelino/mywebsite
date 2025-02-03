@@ -318,6 +318,15 @@ footer{
     display: block;
     margin: 0 auto;
 }
+.receptionn{
+    width: 400px;
+    height: 597px;
 
+}
+
+.gif-container{ 
+        max-width: 100%;
+        height: auto;
+}
 
 
